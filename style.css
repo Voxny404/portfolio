@@ -31,14 +31,25 @@ canvas {
 	transform: translate(50%,-50%);
 	color: $text;
 	max-width: 90%;
-	padding: 2em 3em;
+	padding: -2em -3em;
 	/*background: rgba(0, 0, 0, 0.4);*/
 	text-shadow: 0px 0px 2px #131415;
 	font-family: 'Open Sans', sans-serif;
 	color: #FFFFFF;
+	font-size: 150%;
+	
 }
 
+.Logo{
+	opacity: 0.3;
+	top: 50%;
+	right: 50%;
+	position: absolute;
+	transform: translate(50%,-50%);
+	max-width: 90%;
+}
 
+/*//NAVIBAR_________________________________________________________ */
 .banner-text{
 	width: 100%;
 	position: absolute;
@@ -54,10 +65,24 @@ canvas {
 	text-transform: uppercase;
 	front-size: 20px;
 }
+
 .navi {
+    text-decoration: none;
+	color: #7700FF;
+}
+.navi2 {
     text-decoration: none;
 	color: #A191D6;
 }
+.navi3 {
+    text-decoration: none;
+	color: #A191D6;
+}
+.navi4 {
+    text-decoration: none;
+	color: #A191D6;
+}
+/*___________________________________________________________________*/
 
 h1 {
 	font-size: 2.25em;
@@ -76,4 +101,5 @@ a:hover,
 a:focus {
 	color: $link-hover;
 }
+
 
