@@ -34,9 +34,17 @@ canvas {
 	padding: -2em -3em;
 	/*background: rgba(0, 0, 0, 0.4);*/
 	text-shadow: 0px 0px 2px #131415;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Aclonica', sans-serif;
 	color: #FFFFFF;
 	font-size: 150%;
+	
+}
+
+h1 {
+	font-size: 2.25em;
+	font-weight: 700;
+	letter-spacing: -1px;
+	#FFFFFF
 	
 }
 
@@ -64,6 +72,7 @@ canvas {
 	padding: 40px 15px;
 	text-transform: uppercase;
 	front-size: 20px;
+	font-family: 'Aclonica', sans-serif;
 }
 
 .navi {
@@ -84,12 +93,7 @@ canvas {
 }
 /*___________________________________________________________________*/
 
-h1 {
-	font-size: 2.25em;
-	font-weight: 700;
-	letter-spacing: -1px;
-	#FFFFFF
-}
+
 
 a,
 a:visited {
