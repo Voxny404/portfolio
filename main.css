@@ -1,0 +1,173 @@
+@media only screen and (max-device-width : 640px) {
+  .topImgMobile{
+    height: 200px;
+    background-image: url("res/voxny404.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .topImg{
+    display: none;
+  }
+  #profilMobile{
+    height: 300px;
+    width: 300px;
+    background-image: url("res/profil.png");
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+  #profil{
+    display: none;
+  }
+  #aboutHeadLine{
+    text-align: left;
+  }
+  .contactMe{
+    bottom: 0;
+  }
+  .textContainerTop{
+    justify-content: center;
+  }
+  .aboutme{
+    width: 100%;
+
+
+  }
+  #about{
+    width: 100%;
+  }
+}
+
+.aboutme{
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+}
+#about{
+  display: inline-table;
+  width: 50%;
+}
+#profil{
+  float:right;
+  width:40%;
+}
+
+.Languages{
+ display: inline;
+
+}
+.Frameworks{
+ display: inline;
+
+}
+.else{
+ display: inline;
+
+}
+.topImg{
+  height: 500px;
+  background-image: url("res/voxny404.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.textContainerTop{
+  margin: 0 auto;
+  width: 95%;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 auto;
+  /*border-radius: 25px;*/
+
+}
+.styleSkill{
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.myButton {
+	box-shadow: 0px 10px 14px -7px #427327;
+	background:linear-gradient(to bottom, #b35995 5%, #409973 100%);
+	background-color:#b35995;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:17px 93px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9bd90b;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #409973 5%, #b35995 100%);
+	background-color:#409973;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.contactMe{
+  position:absolute;
+  bottom: -38%;
+
+
+}
+.contactMeMobile{
+  display: inline;
+
+
+
+}
+h2{
+  color: black;
+}
+h3{
+  color: black;
+}
+#text{
+  color: black;
+}
+footer {
+  position: relative;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  background-color: #23272a;
+  color: white;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23272a;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #141822;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #141822;
+}
