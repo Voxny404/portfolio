@@ -177,7 +177,7 @@ html{
 }
 
 /*mobile content ////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 800px) {
+@media (max-width: 823px) {
   .right {
     float: inherit;
     padding:  0 200px;
