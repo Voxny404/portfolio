@@ -145,7 +145,7 @@ footer {
 
 
 body{
-  overflow-x: hidden;
+
   margin: 0 auto;
 }
 html{
@@ -153,6 +153,7 @@ html{
 }
 /*side scroller ---------------------------*/
 ::-webkit-scrollbar {
+  height: 4px;
   width: 5px;
 }
 /* Track */
