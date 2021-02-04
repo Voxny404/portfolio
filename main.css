@@ -145,7 +145,7 @@ footer {
 
 
 body{
-
+  overflow-x: hidden;
   margin: 0 auto;
 }
 html{
@@ -178,7 +178,7 @@ html{
 }
 
 /*mobile content ////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 823px) {
+@media (max-width: 1000px) {
   .right {
     float: inherit;
     padding:  0 200px;
@@ -231,6 +231,7 @@ html{
     background-attachment: fixed;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    margin: 0 auto;
   }
   #profil{
     display: none;
