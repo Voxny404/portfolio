@@ -10,13 +10,20 @@
      box-sizing: border-box;
     }
   .topImgMobile{
-    height: 340px;
+    height: 420px;
+
     background-image: url("res/voxny404.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: 600px 100%;
+    /*background-attachment: scroll;*/
+
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
   }
   .topImg{
     display: none;
@@ -110,7 +117,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 
 }
 
@@ -225,4 +236,18 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #141822;
+}
+
+@keyframes shake {
+  0% { transform: translate(0.1px, 0.1px) rotate(0deg);filter: blur(4px); }
+  10% { transform: translate(-0.1px, -0.2px) rotate(-0.1deg); }
+  20% { transform: translate(-0.3px, 0px) rotate(0.1deg); }
+  30% { transform: translate(0.3px, 0.2px) rotate(0deg); }
+  40% { transform: translate(0.1px, -0.1px) rotate(0.1deg); }
+  50% { transform: translate(-0.1px, 0.2px) rotate(-0.1deg); }
+  60% { transform: translate(-0.3px, 0.1px) rotate(0deg); }
+  70% { transform: translate(0.3px, 0.1px) rotate(-0.1deg); }
+  80% { transform: translate(-0.1px, -0.1px) rotate(0.1deg); }
+  90% { transform: translate(0.1px, 0.2px) rotate(0deg); }
+  100% { transform: translate(0.1px, -0.2px) rotate(-0.1deg); }
 }
