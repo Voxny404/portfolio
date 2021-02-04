@@ -1,10 +1,16 @@
 
+
+.area{
+  position: relative;
+  width: 98%;
+  height:98%;
+}
 .circles{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 66.5%;
+    height: 100%;
     overflow: hidden;
 
 }
@@ -108,9 +114,32 @@
     }
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-800px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
 
+}
+
+@media only screen and (max-device-width : 640px) {
+  .area{
+    position: relative;
+    width: 90%;
+    height:95.3%;
+  }
+  @keyframes animate {
+
+      0%{
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
+      }
+
+      100%{
+          transform: translateY(-400px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
+      }
+
+  }
 }
