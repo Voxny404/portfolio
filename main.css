@@ -5,7 +5,7 @@
 .topImg{
   height: 700px;
   max-width:100%;
-  background-image: url("res/voxny404.png");
+  background-image: url("res/voxny404.gif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,7 +256,7 @@ html{
 
     height: 340px;
     max-width:100%;
-    background-image: url("res/voxny404Mobile.png");
+    background-image: url("res/voxny404Mobile.gif");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
