@@ -31,7 +31,7 @@
 /*text container ---------------------------*/
 .textContainerTop{
 
-  display: flex;
+  display: block;
   margin: 0 auto;
   width: 95%;
 }
@@ -53,11 +53,11 @@
 
   padding: 0px;
 }
-.contactMe{
-
+.contactMeMobile{
+  display: none;
 }
 .right{/*right contend*/
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   float: right;
   width:35%;
@@ -152,10 +152,10 @@ footer {
 
 body{
   overflow-x: hidden;
-  margin: 0 auto;
+
 }
 html{
-  margin: 0 auto;
+
 }
 /*side scroller ---------------------------*/
 ::-webkit-scrollbar {
@@ -185,15 +185,45 @@ html{
 
 /*mobile content ////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 1000px) {
+  .container{
+    display: block;
+  }
+  .textContainerTop{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+  .aboutme{
+    width: 90%;
+  }
   .right {
-    float: inherit;
-    padding:  0 200px;
+    display: inline;
+    position: relative;
+
   }
   #profil{
 
   }
+  .contactMeMobile{
+    display: none;
+  }
+
   .contactMe{
-    padding:  0;
+    width: 40px;
+    height: 20px;
+
+    /* Center vertically and horizontally */
+
+
+    padding-left: 10%;
+    width: 100%;
+    text-align: center;
+  }
+  .skillsAll{
+    position: relative;
+    width: 100%
   }
 }
 @media only screen and (max-device-width : 640px) {
@@ -260,7 +290,7 @@ html{
 
   /*mobile about ----------------------------------*/
   .aboutme{
-
+    width: auto;
   }
   #aboutHeadLine{
     text-align: center;
@@ -270,21 +300,26 @@ html{
   }
   /*mobile right content ----------------------------------*/
   .right{
-    position: relative;
+    display: none;
 
+    float: left;
   }
   /*button ----------------------------------*/
   .contactMe{
+    position: relative;
 
-   width: 40px;
-   height: 20px;
 
-   /* Center vertically and horizontally */
-   position: absolute;
-   top: 50%;
-   left: -14%;
-   width: 100%;
-   text-align: center;
+    /* Center vertically and horizontally */
+
+
+    padding-left: 50%;
+
+    top: 50%;
+    text-align: center;
+
+  }
+  .contactMeMobile{
+    display: inline-block;
   }
 
   /*mobile github embed ----------------------------------*/
