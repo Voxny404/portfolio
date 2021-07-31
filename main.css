@@ -1,128 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-/*top img size and source ---------------------------*/
-.topImg{
-  height: 700px;
-  max-width:100%;
-  background-image: url("res/voxny404.gif");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*img top hover animation ---------------------------*/
-.topImg:hover{
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-/*global container /////////////////////////////////////////*/
-.container{
-
-  border: 1px solid black;
-  background-color: #ffffff;
-
-  /*border-radius: 25px;*/
-
-}
-
-/*text container ---------------------------*/
-.textContainerTop{
-
-  display: block;
-  margin: 0 auto;
-  width: 95%;
-}
-
-/*contend in text container ---------------------------*/
-.aboutme{ /*about & skill & profil pic*/
-  display: block;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-}
-#about{ /*text contend*/
-  display: inline-table;
-  width: 50%;
-}
-#profil{ /*picture profil*/
-  position: relative;
-  height:90%;
-
-  padding: 0px;
-}
-.contactMeMobile{
-  display: none;
-}
-.right{/*right contend*/
-  display: inline;
-  flex-wrap: wrap;
-  float: right;
-  width:35%;
-}
-.Languages{/*skills*/
- display: inline;
-}
-.Frameworks{/*skills*/
- display: inline;
-}
-.else{/*skills*/
- display: inline;
-}
-
-/*skill boxes */
-.styleSkill{
-  border: 1px solid black;
-  background-color: #2c2f33;
-  margin: 0 auto;
-  border-radius: 25px;
-}
-/*text contend end -------------------------------------------------*/
-
-
-
-/* button----------------------------------------------------------*/
-.myButton {
-	box-shadow: 0px 10px 14px -7px #427327;
-	background:linear-gradient(to bottom, #b35995 5%, #409973 100%);
-	background-color:#b35995;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Exo', sans-serif;
-	font-size:18px;
-	font-weight:bold;
-	padding:17px 95px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #9bd90b;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #409973 5%, #b35995 100%);
-	background-color:#409973;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.contactMe{
-  position:relative;
-  width:1000px;
-  height:100px;
-  top:100px;
-  left: 2%;
-}
-/*github embeding ---------------------------*/
-.githubEmbed{
-
-  text-align: center;
-}
-#githubImg{
-  width: 90%;
-}
-
 /*text formating global ---------------------------*/
 h2{
   color: #0F0F0F;
@@ -132,11 +10,21 @@ h3{
   color: #0F0F0F;
   font-family: 'Press Start 2P', sans-serif;
 }
-#text{
+p{
   color: #0F0F0F;
   font-family: 'Exo', sans-serif;
 }
-#textColor2{
+a{
+  text-decoration: none;
+}
+
+button {
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+#text{
   color: #A799B5;
   font-family: 'Exo', sans-serif;
 }
@@ -149,14 +37,6 @@ footer {
   color: #C8C8C8;
 }
 
-
-body{
-  overflow-x: hidden;
-
-}
-html{
-
-}
 /*side scroller ---------------------------*/
 ::-webkit-scrollbar {
   height: 4px;
@@ -173,158 +53,4 @@ html{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #141822;
-}
-
-/*shake animation---------------------------*/
-@keyframes shake {
-  0% { transform: translate(0.1px, 0.1px) rotate(0deg);filter: blur(4px); }
-  50% { transform: translate(-0.1px, 0.2px) rotate(-0.1deg); }
-  60% { transform: translate(-0.3px, 0.1px) rotate(0deg); }
-  100% { transform: translate(0.1px, -0.2px) rotate(-0.1deg); }
-}
-
-/*mobile content ////////////////////////////////////////////////////////////////////////////*/
-@media (max-width: 1000px) {
-  .container{
-    display: block;
-  }
-  .textContainerTop{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-
-  }
-  .aboutme{
-    width: 90%;
-  }
-  .right {
-    display: inline;
-    position: relative;
-
-  }
-  #profil{
-
-  }
-  .contactMeMobile{
-    display: none;
-  }
-
-  .contactMe{
-    width: 40px;
-    height: 20px;
-
-    /* Center vertically and horizontally */
-
-
-    padding-left: 10%;
-    width: 100%;
-    text-align: center;
-  }
-  .skillsAll{
-    position: relative;
-    width: 100%
-  }
-}
-@media only screen and (max-device-width : 640px) {
-
-    /*global mobile//////////////////////////////////////////*/
-    body {
-      overflow-x: hidden;
-
-
-    }
-    html{
-
-    }
-    #mobile{
-
-
-
-
-
-
-    }
-    /*global mobile end//////////////////////////////////////////*/
-
-    /*mobile top img----------------------------------*/
-  .animations{
-
-    margin: 0 auto;
-  }
-  .topImgMobile{
-
-    height: 340px;
-    max-width:100%;
-    background-image: url("res/voxny404Mobile.gif");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90vh 100vh;
-
-    /*background-attachment: scroll;*/
-  }
-  .topImg{
-    display: none;
-  }
-
-  /*mobile profile picture----------------------------------*/
-  #profilMobile{
-    height: 300px;
-    width: 300px;
-    background-image: url("res/profil.png");
-    background-attachment: fixed;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-  }
-  #profil{
-    display: none;
-  }
-
-  /*text container mobile ---------------------------*/
-  .textContainerTop{
-    width: 100%;
-    text-align: center;
-  }
-
-  /*mobile about ----------------------------------*/
-  .aboutme{
-    width: auto;
-  }
-  #aboutHeadLine{
-    text-align: center;
-  }
-  #about{
-
-  }
-  /*mobile right content ----------------------------------*/
-  .right{
-    display: none;
-
-    float: left;
-  }
-  /*button ----------------------------------*/
-  .contactMe{
-    position: relative;
-
-
-    /* Center vertically and horizontally */
-
-
-    padding-left: 50%;
-
-    top: 50%;
-    text-align: center;
-
-  }
-  .contactMeMobile{
-    display: inline-block;
-  }
-
-  /*mobile github embed ----------------------------------*/
-  .githubEmbed{
-    display: none;
-  }
-
 }
