@@ -19,7 +19,21 @@ const createDocument = () => {
 };
 
 window.onresize = () => {
-  location.reload();
+ //location.reload();
+  let aboutMe = document.getElementById('aboutMeText')
+  let imageDiv = document.getElementById('imageDiv')
+  
+  if (aboutMe && imageDiv && window.innerWidth >= 700) {
+   
+    imageDiv.style.marginRight = '5%';
+    imageDiv.style.paddingTop = '4em'
+    imageDiv.style.float = 'right';
+    aboutMe.style.width = (window.innerWidth / 2) + 'px';
+  } else {
+    imageDiv.style.marginRight = '5%';
+    imageDiv.style.paddingTop = '4em'
+    imageDiv.style.float = 'none';
+  }
 };
 
 const createCanvas = () => {
@@ -162,6 +176,8 @@ const createMainContent = () => {
   let footerP = document.createElement('p');
   let footerA = document.createElement('p');
 
+  imageDiv.setAttribute('id','imageDiv')
+  aboutmeP.setAttribute('id', 'aboutMeText')
   mainContentDiv.appendChild(aboutme);
   mainContentDiv.appendChild(aboutmeP);
   mainContentDiv.appendChild(document.createElement('br'));
@@ -226,6 +242,7 @@ const createMainContent = () => {
   button.style.marginTop = '10%';
   button.style.cursor = 'pointer'
 
+  aboutmeP.style.maxWidth = '800px'
   if (window.innerWidth >= 540) {
     imageDiv.style.marginRight = '5%';
     imageDiv.style.paddingTop = '4em'
@@ -234,7 +251,7 @@ const createMainContent = () => {
     //aboutmeP.style.maxWidth = '800px'
   }
   
-
+  imageDiv.style.paddingBottom = '2em'
   footerA.style.color = '#A799B5';
   footerA.style.fontSize = '15px';
   footerP.style.color = 'gray';
