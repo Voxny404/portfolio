@@ -5,25 +5,47 @@
 h2{
   color: #0F0F0F;
   font-family: 'Press Start 2P', sans-serif;
+ 
 }
 h3{
   color: #0F0F0F;
   font-family: 'Press Start 2P', sans-serif;
+ 
 }
 p{
   color: #0F0F0F;
   font-family: 'Exo', sans-serif;
+  margin-right: auto;
+  
 }
 a{
   text-decoration: none;
 }
 
 button {
-    border-radius: 20px;
+    border-radius: .5em;
     text-decoration: none;
     border: none;
+    background-color: #23272a;
+    color: #A799B5;
+    box-shadow: 1px 1px 2px black, 0 0 25px #23272a, 0 0 5px #0e0f0f;
 }
-
+button:hover {
+  background-color: #111213;
+}
+img {
+  border-radius: .5em;
+  
+  box-shadow: 1px 1px 2px black, 0 0 25px #23272a, 0 0 5px #0e0f0f;
+}
+#mainContent {
+  border-radius: .5em;
+  margin: 0;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInGlobal 1s linear;
+}
 #text{
   color: #A799B5;
   font-family: 'Exo', sans-serif;
@@ -54,3 +76,38 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #141822;
 }
+
+@keyframes fadeInGlobal {
+  from {
+      opacity: 0;
+
+       /* Safari & Chrome */
+      -webkit-opacity: 0;
+
+      /* Firefox */
+      -moz-opacity: 0;
+
+      /* Internet Explorer */
+      -ms-opacity: 0;
+      
+      /* Opera */
+      -o-opacity: 0;
+  }
+  to {
+      opacity: 1;
+      
+      /* Safari & Chrome */
+      -webkit-opacity: 1;
+
+      /* Firefox */
+      -moz-opacity: 1;
+
+      /* Internet Explorer */
+      -ms-opacity: 1;
+      
+      /* Opera */
+      -o-opacity: 1;
+  }
+}
+
+
