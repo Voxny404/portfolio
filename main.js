@@ -2,8 +2,8 @@ let app = document.getElementById('app');
 const aboutMeText = "Hello, I'm Jessica Nicole P. , and I thrive on challenges. The world of computers has always captivated me, and I find joy in exploring its endless possibilities. In my spare time, I immerse myself in the world of game development, working with Unity to bring my imaginative ideas to life. Building my first computer at the tender age of 14 ignited my passion for technology, and ever since, I've been driven to push the boundaries of what is possible. In 2019, I reconnected with my love for game development and created my very first game using Unity. This experience solidified my dedication to honing my skills in this dynamic field. As a developer, I constantly seek to learn and improve, eager to take on new projects and embrace the evolving landscape of the gaming industry. Beyond my technological pursuits, I find solace and inspiration in creating music. Since 2008, I have been strumming the strings of the guitar, allowing my emotions to flow through every chord. More recently, in 2020, I embarked on a new journey by learning to play the piano, expanding my musical repertoire and challenging myself to master new melodies. As a multilingual individual, I proudly consider German, my native language. This linguistic background has nurtured my appreciation for cultural diversity and communication, enabling me to connect with people from various walks of life. In my portfolio, you'll find a collection of my game development projects, showcasing my skills, creativity, and dedication. I'm eager to collaborate, grow, and contribute to the ever-evolving world of technology and entertainment. Let's embark on an exciting journey together, where innovation knows no bounds.";
 const languageText = 'Javascript, Golang, C#, CSS, German, English.';
 const frameworksText = 'ElectronJS, ReactJS, AWS, DynamoDB.';
-const otherText = '<a style="color:#A799B5" href="https://github.com/Voxny404">github.com/Voxny404<a>';
-const projectText = '<a style="color:#A799B5" href="https://voxny404.github.io/GameStuff/">Games<a><br>';
+const otherText = '<a style="color:black" href="https://github.com/Voxny404">github.com/Voxny404<a>';
+const projectText = '<a style="color:black" href="https://voxny404.github.io/GameStuff/">Games<a><br>';
 
 let loadingbar = 0;
 let errorDisplay = false;
@@ -204,7 +204,7 @@ const createMainContent = () => {
   otherP2.innerHTML = projectText;
   footerA.innerHTML = 'Made by Voxny404@gmail.com';
   footerP.innerHTML = 'powered by Github';
-
+  
   aboutme.style.marginLeft = '5%';
   aboutmeP.style.marginLeft = '5%';
   languages.style.marginLeft = '5%';
@@ -234,13 +234,16 @@ const createMainContent = () => {
   otherP.style.paddingRight = '15px';
   otherP2.style.paddingRight = '15px';
 
-  button.innerHTML = '<a style="color:#A799B5" href="mailto:Voxny404@gmail.com">CONTACT ME<a>';
+  button.innerHTML = '<a style="color:black" href="mailto:Voxny404@gmail.com">CONTACT ME<a>';
   button.style.display = 'block';
   button.style.width = '250px';
   button.style.height = '50px';
   button.style.margin = 'auto';
   button.style.marginTop = '10%';
-  button.style.cursor = 'pointer'
+
+  button.setAttribute('id','buttonWhite')
+  otherP.setAttribute('id','buttonWhite')
+  otherP2.setAttribute('id','buttonWhite')
 
   aboutmeP.style.maxWidth = '800px'
   if (window.innerWidth >= 540) {

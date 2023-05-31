@@ -3,14 +3,11 @@
 
 /*text formating global ---------------------------*/
 h2{
-  color: #0F0F0F;
   font-family: 'Press Start 2P', sans-serif;
- 
 }
 h3{
-  color: #0F0F0F;
+  color: black;
   font-family: 'Press Start 2P', sans-serif;
- 
 }
 p{
   color: #0F0F0F;
@@ -49,6 +46,16 @@ img {
 #text{
   color: #A799B5;
   font-family: 'Exo', sans-serif;
+}
+
+#buttonWhite{
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid black;
+}
+#buttonWhite:hover {
+  background-color: rgb(136, 131, 131);
+  box-shadow: inset 0 0 10px black;
 }
 /*footer and body global---------------------------*/
 footer {
