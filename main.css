@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 /*text formating global ---------------------------*/
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 h2{
   font-family: 'Press Start 2P', sans-serif;
 }
@@ -19,43 +24,84 @@ a{
   text-decoration: none;
 }
 
-button {
-    border-radius: .5em;
-    text-decoration: none;
-    border: none;
-    background-color: #23272a;
-    color: #A799B5;
-    box-shadow: 1px 1px 2px black, 0 0 25px #23272a, 0 0 5px #0e0f0f;
-}
-button:hover {
-  background-color: #111213;
-}
 img {
   border-radius: .5em;
-  
   box-shadow: 1px 1px 2px black, 0 0 25px #23272a, 0 0 5px #0e0f0f;
 }
-#mainContent {
-  border-radius: .5em;
-  margin: 0;
+
+#topCanvas {
+  position: fixed;
+  animation: fadeInGlobal 1s linear;
+}
+#canvasPlaceHolder {
+   height: calc(100vh - 600px);
+}
+#middleContainer{
+
+  background-color: white;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
+  border-radius: .5em;
+  padding: 2em;
   animation: fadeInGlobal 1s linear;
+  padding-bottom: 4em;
+  box-shadow: 1px 1px 2px black, 0 0 25px #23272a, 0 0 5px #0e0f0f;
 }
-#text{
-  color: #A799B5;
-  font-family: 'Exo', sans-serif;
+
+#section1Text {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex:1;
+}
+
+#imageProfile {
+  display: block;
+  padding-right: 5em;
+  padding-left: 5em;
+  flex: 2;
+  width:250; 
+  height:250; 
 }
 
 #buttonWhite{
   background-color: white;
   box-shadow: none;
   border: 1px solid black;
+  padding: 1em;
+  border-radius: .5em;
+  font-weight: 700;
 }
 #buttonWhite:hover {
   background-color: rgb(136, 131, 131);
   box-shadow: inset 0 0 10px black;
+}
+#cardButton {
+  position: relative;
+  float: right;
+}
+.contactMeButton {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+.contactMeButton:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+#section3Text{
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+}
+#meowvilleImage{
+  width: 20em;
+  height: auto;
+}
+#meowvillageText {
+  max-width: 800px;
 }
 /*footer and body global---------------------------*/
 footer {
@@ -117,4 +163,43 @@ footer {
   }
 }
 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
+@media screen and (max-width: 908px){ 
+  #section1Text {
+    flex-wrap:wrap-reverse;
+  }
+  #imageProfile {
+    padding: none;
+
+  }
+  #section3Text {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  #meowvilleImage{
+    width: 20em;
+  }
+  #cardButton {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-height: 800px){ 
+  #canvasPlaceHolder {
+    height: calc(100vh - 440px);
+ }
+}
