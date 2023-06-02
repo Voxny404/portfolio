@@ -4,9 +4,12 @@
 /*text formating global ---------------------------*/
 body {
   margin: 0;
-  overflow-x: hidden;
+  
 }
 
+canvas{
+  width: 100%;
+}
 h2{
   font-family: 'Press Start 2P', sans-serif;
 }
@@ -32,9 +35,14 @@ img {
   position: fixed;
   animation: fadeInGlobal 1s linear;
 }
+#app{
 
+  margin-left: auto;
+  margin-right: auto;
+}
 #canvasPlaceHolder {
    height: calc(100vh - 600px);
+   width: auto;
 }
 #backgroundV {
   position: fixed;
@@ -48,12 +56,13 @@ img {
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 #middleContainer{
-
+  width: auto;
   background-color: white;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  overflow: hidden;
   z-index: 1;
   border-radius: .5em;
   padding: 2em;
